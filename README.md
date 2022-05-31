@@ -1,2 +1,1 @@
-# taller-docker
-Taller Docker &amp; Kubernetes 2022
+# Taller Docker &amp; Kubernetes 2022
