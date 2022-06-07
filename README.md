@@ -1,1 +1,1 @@
-# Taller Docker &amp; Kubernetes 2022
+# Taller Docker & Kubernetes 2022
