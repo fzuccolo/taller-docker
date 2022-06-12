@@ -1,12 +1,12 @@
-# Ejercicio 02
+# Ejercicio 2
 
 1. Descargar imagen:
 
         docker pull nicopaez/pingapp:3.0.0
 
-2. Crear [repositorio en dockerhub](https://hub.docker.com/repository/docker/fzuccolo/taller-docker):
+2. Crear [repositorio en dockerhub](https://hub.docker.com/r/fzuccolo/pingapp):
 
-        fzuccolo/taller-docker
+        fzuccolo/pingapp
 
 3. Taggear imagen:
 
