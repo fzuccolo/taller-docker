@@ -2,28 +2,25 @@
 
 1. Crear una página con mi nombre:
 
-        ./index.html
+        ./html/index.html
 
-2. Crear el archivo `Dockerfile`:
+2. Descargar imagen de `nginx`:
 
-        FROM nginx:1.22.0
-        COPY ./index.html /usr/share/nginx/html/
+        docker pull nginx:1.22.0
 
-3. Crear imagen:
+3. Iniciar instancia del servidor:
 
-        docker build -t zuccolo-ej01 .
+        $ cd ejercicio01
 
-4. Iniciar instancia del servidor:
-
-        docker run --rm --name zuccolo-nginx-instance -d -p 1234:80 zuccolo-ej01
+        $ docker run --rm --name zuccolo-nginx-instance -v $(pwd)/html:/usr/share/nginx/html -p 4567:80 -d nginx:1.22.0
 
 3. Visitar URL local:
 
-        http://localhost:1234
+        http://localhost:4567
 
 4. Resultado:
 
-   <img src="page.png" width="300">
+   <img src="resultado.png" width="300">
 
 5. Parar instancia del servidor:
 
