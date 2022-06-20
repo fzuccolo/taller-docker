@@ -27,8 +27,9 @@
         # imagen base del contenedor
         image: nicopaez/jobvacancy-ruby:1.3.0
         # definir hostnames para comunicase con un servicio en otro container,
-        # este está igual al comportamiento por defecto, también podría ser: `db:otro_nombre`.
         links:
+        # acceder al servicio "db" a través del hostname "db"
+        # (igual al comportamiento por defecto, también podría ser: `db:otro_nombre`)
         - db
         # mapear puertos host:contenedor.
         ports:
@@ -42,10 +43,10 @@
         # definir valor de variable de entorno "DATABASE_URL"
         # (notar que se usa el hostname definido en links)
         DATABASE_URL: "postgres://postgres:Passw0rd!@db:5432/postgres"
-        # iniciar el servicio "db" antes que este cuando se ejecute "docker-compose up".
+        # iniciar el contenedor del servicio "db" antes que este cuando se ejecute "docker-compose up".
         depends_on:
         - db
-    # definir el servicio "web"
+    # definir el servicio "db"
     db:
         # imagen base del contenedor
         image: postgres
