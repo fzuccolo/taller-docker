@@ -1,5 +1,7 @@
 # Ejercicio 6
 
+### Creación de la imagen
+
 1. Crear el Dockerfile:
 
     ```dockerfile
@@ -21,7 +23,7 @@
 
         $ docker push fzuccolo/ej06:1.0
 
-### C. Utilizar la imagen
+### Utilización de la imagen
 
 1. Descargar la imagen:
 
