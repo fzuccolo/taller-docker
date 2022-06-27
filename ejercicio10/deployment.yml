@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telegram-bot
+  labels:
+    app: telegram-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: telegram-bot
+  template:
+    metadata:
+      labels:
+        app: telegram-bot
+    spec:
+      containers:
+      - name: telegram-bot
+        image: nicopaez/telegrambot:0.0.7
+        env:
+        - name: TELEGRAM_TOKEN
+          value: "<COMPLETAR>"
