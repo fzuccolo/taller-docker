@@ -40,7 +40,7 @@
             image: nicopaez/telegrambot:0.0.7
             env:
             - name: TELEGRAM_TOKEN
-            value: "<COMPLETAR>"
+              value: "<COMPLETAR>"
     ```
 
 6. Iniciar pods:
